@@ -59,13 +59,13 @@ gulp.task('browser-sync', function() {
       }
   });
 
-  gulp.watch(["*.html", "build/js/*.js", "build/css/*.css"])
+  gulp.watch(["*.html", "js/*.js", "css/*.css"])
       .on("change", browserSync.reload);
 });
 
 gulp.task("watch", function() {
-  gulp.watch("js/*.js", gulp.series("scripts"));
-  gulp.watch("sass/*.scss", gulp.series("sass"));
+  gulp.watch("./build/js/*.js", gulp.series("scripts"));
+  gulp.watch("./build/sass/*.scss", gulp.series("sass"));
 });
 
 gulp.task("default", gulp.parallel("browser-sync", "watch"));
