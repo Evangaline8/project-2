@@ -7,13 +7,8 @@ body{
     align-items: center;
 }
 .logo {
-    margin-top: 60px;
-    background-image: url(../images/nyt-logo.svg);
-    width: 100%;
+    align-content: center;
     height: 15rem;
-    background-repeat: no-repeat;
-    background-position: center;
-
 }
 .menu {
     width: 5rem;
