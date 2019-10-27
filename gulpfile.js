@@ -10,7 +10,7 @@ const gulp = require("gulp"),
 
   gulp.task('sass', function() {
     return gulp
-      .src('./sass/style.scss')
+      .src('./sass/_style.scss')
       .pipe(prettyError())
       .pipe(sass())
       .pipe(
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
       }
   });
 
-  gulp.watch(["*.html", "js/*.js", "css/*.css"])
+  gulp.watch(["*.html", "js/*.js", "css/*.css,"])
       .on("change", browserSync.reload);
 });
 
