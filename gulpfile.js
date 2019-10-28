@@ -5,7 +5,7 @@ const gulp = require("gulp"),
   eslint = require("gulp-eslint"),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
-  cssnano = require('gulp-clean-css'),
+  cleanCSS = require('gulp-clean-css'),
   prettyError = require('gulp-prettyerror');
 
   gulp.task('sass', function() {
@@ -17,7 +17,7 @@ const gulp = require("gulp"),
         autoprefixer(),
       )
       .pipe(gulp.dest('./build/css'))
-      .pipe(cssnano())
+      .pipe(cleanCSS())
       .pipe(rename('style.min.css'))
       .pipe(gulp.dest('./build/css'));
   });
