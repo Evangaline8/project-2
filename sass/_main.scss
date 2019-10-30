@@ -1,32 +1,51 @@
 body{
+    border-style: solid;
+    border-width: 10px;
+    border-color: orange;
     background-color: black;
     color: whitesmoke;
-    display:flex;
+
+}
+.container {
+    display: flex;
     flex-direction:column;
     align-content: center;
     align-items: center;
+    justify-content: space-between; 
 }
 .logo {
-    margin-top: 60px;
-    // background-image: url(../images/nyt-logo.svg);
+    border-style: solid;
+    border-width: 10px; 
+    border-color: pink;
     height: 15rem;
-    
-
 }
 .menu {
+    border-width: 10px;
+    border-color: red;
     width: 5rem;
     align-items: center;
     display: none;
 }
 select{
+    border-style: solid;
+    border-color:limegreen;
+    border-width: 10px;
     background-color:white;
     border-width:1px;
-    height: 2.5em;
     width: 7.1rem;
+    font-size: large;
 
 }
 footer {
-    margin-top: 20px;
+    border-style: solid;
+    border-width: 10px; 
+    border-color: purple;
+    margin-top: 200px;
     font-size: 12px;
 
 }
+/* In a .css file... */
+@media all and (min-width: 960px) {
+    /* Targeted CSS goes here... */
+
+  }

@@ -5,7 +5,7 @@ const gulp = require("gulp"),
   eslint = require("gulp-eslint"),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
-  cleanCSS = require('gulp-clean-css'),
+  cssnano = require('gulp-cssnano'),
   prettyError = require('gulp-prettyerror');
 
   gulp.task('sass', function() {
@@ -16,10 +16,10 @@ const gulp = require("gulp"),
       .pipe(
         autoprefixer(),
       )
-      .pipe(gulp.dest('./build/css'))
-      .pipe(cleanCSS())
+      .pipe(gulp.dest('build/css'))
+      .pipe(cssnano())
       .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('./build/css'));
+      .pipe(gulp.dest('build/css'));
   });
 
 
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
       }
   });
 
-  gulp.watch(["*.html", "build/js/*.js", "build/css/*.css", "sass/*.scss"])
+  gulp.watch(["*.html", "build/js/*.js", "build/css/*.css", "main.scss"])
       .on("change", browserSync.reload);
 });
 
