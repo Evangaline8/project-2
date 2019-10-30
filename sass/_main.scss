@@ -1,9 +1,15 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
 body{
+    height: 100%;
     border-style: solid;
     border-width: 10px;
     border-color: orange;
     background-color: black;
     color: whitesmoke;
+    justify-content: space-between;
 
 }
 .container {
