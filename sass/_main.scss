@@ -18,6 +18,7 @@ body{
     border-width: 10px; 
     border-color: pink;
     height: 15rem;
+    justify-content: space-around;
 }
 .menu {
     border-width: 10px;
@@ -42,10 +43,11 @@ footer {
     border-color: purple;
     margin-top: 200px;
     font-size: 12px;
+    text-align: center;
 
 }
 /* In a .css file... */
-@media all and (min-width: 960px) {
+@media all and (min-width: 600px) {
     /* Targeted CSS goes here... */
 
   }
