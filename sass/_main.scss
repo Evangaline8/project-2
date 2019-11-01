@@ -55,5 +55,43 @@ footer {
 /* In a .css file... */
 @media all and (min-width: 600px) {
     /* Targeted CSS goes here... */
+    .container {
+        border-style: solid;
+        border-width: 10px; 
+        border-color: paleturquoise;
+        display: flex;
+        flex-direction:row;
+        justify-content: left;
+        flex-flow: wrap;
+    }
+    .site-header {
+        border-style: solid;
+        border-width: 10px; 
+        border-color: hotpink;
+        display: flex;
+        flex-direction: column;
+    }
 
   }
+  /* In a .css file... */
+@media all and (min-width: 1200px) {
+    /* Targeted CSS goes here... */
+    .container {
+        border-style: solid;
+        border-width: 10px; 
+        border-color: paleturquoise;
+        display: flex;
+        flex-direction:row;
+        align-content: left;
+        align-items: left;
+        flex-flow: wrap;
+    }
+    .site-header {
+        border-style: solid;
+        border-width: 10px; 
+        border-color: hotpink;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

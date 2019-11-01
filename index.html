@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,40 @@
     <link rel="stylesheet" href="css/style.css" media="all and (max-width: 960px)" />
     <title>Instanews</title>
 </head>
+
 <body>
     <div class="container">
-    <section class="logo">
-        <img src="./images/nyt-logo.svg" alt="logo">
-    </section>
-    <section>
-   <p> Choose a section</p>
-</section>
-   <select>
-       <section class="menu">
-       <option value="sections">Sections ...</option>
-        <option value="arts">Arts</option>
-        <option value="business">Business</option>
-        <option value="sports">Sports</option>
-        <option value="technology">Techonolgy</option>
-        <option value="fashion">Fashion</option>
-      </select>
-    </section>
-      </body>
-      </html>
+        <header class="site-header">
+            <section class="logo">
+                <img src="./images/nyt-logo.svg" alt="logo">
+            </section>
+
+            <p> Choose a section</p>
+            <select class="selection" id="selection">
+                <section class="menu" id="menu">
+                    <option value="">Sections ...</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Techonolgy</option>
+                    <option value="fashion">Fashion</option>
+            </select>
+
+        </header>
+        <section class="articleContainer">
+            <div id="articles" class="articles"></div>
+
+        </section>
+        <footer class="site_footer">
+            &copy; Copyright 2016 INSTANEWS
+        </footer>
+    </div> <!-- close container -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
     <script src="./build/js/script.min.js"></script>
-</div> 
+
 </body>
-<footer>
-    &copy; Copyright 2016 INSTANEWS
-</footer>
+
+
 </html>
