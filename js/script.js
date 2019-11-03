@@ -12,7 +12,6 @@ $("#selection").on("change", function(){
         dataType: "JSON"
   })
 
-
     .done(function(data){
 
         const articleFilter = data.results.filter(function(filterSet) {
@@ -23,10 +22,11 @@ $("#selection").on("change", function(){
     
     const cutArticle = articleFilter.slice(0, 12);
     
-    console.log(cutArticle);
+    //console.log(cutArticle);
+    
         $.each(cutArticle, function(index, object){
          $("#articles").append(
-            `<article class="news_article" style="background:url(${object.multimedia[4].url})">
+            `<article class="news_article" style="background:url(${object.multimedia[4].url}")>
                 <p class="news_copy">
                 ${object.abstract}
                 </p>
@@ -34,12 +34,8 @@ $("#selection").on("change", function(){
             `
             
             ); 
-
+        });//close each
         
-        });//close each 
-    
-    // ${object.multimedia[4]} ${object.abstract}
-    
 })
     .fail(function(){
         console.log("error");
