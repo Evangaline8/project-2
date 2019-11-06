@@ -23,7 +23,7 @@ $("#selection").on("change", function(){
     const cutArticle = articleFilter.slice(0, 12);
     
     //console.log(cutArticle);
-    
+     $("#articles").empty(); //to reload the page when new selection.
         $.each(cutArticle, function(index, object){
          $("#articles").append(
             `<article class="news_article" style="background:url(${object.multimedia[4].url}")>

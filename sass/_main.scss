@@ -12,11 +12,17 @@ body{
     justify-content: space-between;
 
 }
+.site-header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
 .container {
     display: flex;
-    flex-direction:column;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-content: left;
+    align-items: left;
     justify-content: space-between; 
 }
 .logo {
@@ -24,7 +30,6 @@ body{
     border-width: 10px; 
     border-color: pink;
     height: 15rem;
-    justify-content: space-around;
 }
 .menu {
     border-width: 10px;
@@ -43,17 +48,28 @@ select{
     font-size: large;
 
 }
+.articleContainer{
+    display:flex;
+    flex-direction: row;
+}
 
 .articles {
     min-height: 150em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-}
 .news_copy{
     background: rgba(0, 0, 0, 0.5);
- 
-    }
+    position: absolute;
+    bottom:0;
+}}
+article{
+    height:400px;
+    width:400px;
+}
+.news_article{
+    position:relative;
+}
 
 footer {
     border-style: solid;
